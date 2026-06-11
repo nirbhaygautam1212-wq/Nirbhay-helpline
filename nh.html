@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nirbhay Help Center - India ki sabse useful Hindi website. Travel tips, school help, calculator guides, government schemes, daily life tips aur bahut kuch. Aapki har problem ka solution yahan hai.">
+<meta name="keywords" content="nirbhay help, hindi tips, travel guide india, school help, government schemes, daily life tips, calculator, useful articles hindi">
+<meta name="author" content="Nirbhay Gathon">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Nirbhay Help Center - Aapki Har Problem Ka Solution">
+<meta property="og:description" content="India ki sabse useful Hindi website - travel, school, government schemes, daily tips sab ek jagah">
+<meta property="og:type" content="website">
+<title>Nirbhay Help Center | निर्भय हेल्प सेंटर - Har Sawaal Ka Jawab</title>
+
+<!-- Google AdSense Placeholder -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+  :root {
+    --primary: #1a56db;
+    --primary-dark: #1341a8;
+    --accent: #ff6b2b;
+    --accent-light: #fff3ee;
+    --green: #0d9f6e;
+    --green-light: #ecfdf5;
+    --bg: #f5f7ff;
+    --white: #ffffff;
+    --text: #1e1e2e;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --card-shadow: 0 2px 12px rgba(26,86,219,0.10);
+    --radius: 14px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  a { text-decoration: none; color: inherit; }
+
+  /* ===== HEADER ===== */
+  header {
+    background: linear-gradient(135deg, #0f2870 0%, #1a56db 60%, #2563eb 100%);
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 16px rgba(26,86,219,0.25);
+  }
+
+  .header-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    gap: 12px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-icon {
+    width: 40px; height: 40px;
+    background: var(--accent);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 800;
+    color: white;
+    box-shadow: 0 2px 8px rgba(255,107,43,0.4);
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    color: white;
+    line-height: 1.1;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+  }
+
+  .logo-text span {
+    font-size: 10px;
+    opacity: 0.8;
+    font-weight: 400;
+  }
+
+  .header-search {
+    flex: 1;
+    max-width: 380px;
+    position: relative;
+  }
+
+  .header-search input {
+    width: 100%;
+    padding: 9px 16px 9px 40px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 13px;
+    outline: none;
+    font-family: inherit;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
+  }
+
+  .header-search input::placeholder { color: rgba(255,255,255,0.65); }
+  .header-search input:focus { background: rgba(255,255,255,0.22); }
+
+  .search-icon {
+    position: absolute;
+    left: 13px; top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
+  }
+
+  nav {
+    display: flex;
+    gap: 4px;
+  }
+
+  nav a {
+    color: rgba(255,255,255,0.85);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  nav a:hover, nav a.active {
+    background: rgba(255,255,255,0.18);
+    color: white;
+  }
+
+  /* ===== AD BANNER SLOT ===== */
+  .ad-slot {
+    background: linear-gradient(90deg, #e8f0ff, #f0e8ff);
+    border: 2px dashed #c0d0f0;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    color: #7090c0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px;
+    min-height: 80px;
+  }
+
+  .ad-slot.leaderboard { min-height: 90px; }
+  .ad-slot.rectangle { min-height: 250px; }
+  .ad-slot.half-page { min-height: 200px; }
+
+  .ad-banner-wrapper {
+    max-width: 1100px;
+    margin: 18px auto 0;
+    padding: 0 20px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: linear-gradient(135deg, #0f2870 0%, #1a56db 55%, #3b82f6 100%);
+    padding: 48px 20px 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(255,107,43,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .hero h2 span { color: #ffb347; }
+
+  .hero p {
+    color: rgba(255,255,255,0.82);
+    font-size: 15px;
+    max-width: 520px;
+    margin: 0 auto 28px;
+  }
+
+  .hero-search {
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero-search input {
+    width: 100%;
+    padding: 15px 56px 15px 22px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    outline: none;
+    color: var(--text);
+  }
+
+  .hero-search button {
+    position: absolute;
+    right: 6px; top: 50%;
+    transform: translateY(-50%);
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: inherit;
+  }
+
+  .hero-search button:hover { background: #e85c1a; }
+
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 18px;
+  }
+
+  .hero-tags span {
+    background: rgba(255,255,255,0.18);
+    color: white;
+    border-radius: 20px;
+    padding: 4px 13px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    backdrop-filter: blur(4px);
+  }
+
+  .hero-tags span:hover { background: rgba(255,255,255,0.28); }
+
+  /* ===== MAIN LAYOUT ===== */
+  .main-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 20px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 28px;
+    align-items: start;
+  }
+
+  /* ===== SECTION TITLES ===== */
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px; height: 22px;
+    background: var(--accent);
+    border-radius: 3px;
+  }
+
+  .view-all {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #e8f0ff;
+    transition: background 0.2s;
+  }
+
+  .view-all:hover { background: #d0e0ff; }
+
+  /* ===== CATEGORY STRIP ===== */
+  .category-strip {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+
+  .cat-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    transition: all 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  .cat-btn:hover, .cat-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 2px 10px rgba(26,86,219,0.3);
+  }
+
+  /* ===== ARTICLE CARDS ===== */
+  .articles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .article-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid var(--border);
+  }
+
+  .article-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(26,86,219,0.16);
+  }
+
+  .article-card.featured {
+    grid-column: span 2;
+    display: flex;
+  }
+
+  .card-thumb {
+    background: linear-gradient(135deg, #1a56db, #3b82f6);
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .article-card.featured .card-thumb {
+    width: 260px;
+    min-height: unset;
+    flex-shrink: 0;
+    border-radius: 0;
+  }
+
+  .card-thumb.travel { background: linear-gradient(135deg, #0d9f6e, #10b981); }
+  .card-thumb.school { background: linear-gradient(135deg, #f59e0b, #f97316); }
+  .card-thumb.govt { background: linear-gradient(135deg, #8b5cf6, #6366f1); }
+  .card-thumb.tech { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
+  .card-thumb.money { background: linear-gradient(135deg, #10b981, #059669); }
+  .card-thumb.health { background: linear-gradient(135deg, #f43f5e, #e11d48); }
+  .card-thumb.tips { background: linear-gradient(135deg, #f59e0b, #d97706); }
+  .card-thumb.legal { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+
+  .card-content {
+    padding: 16px;
+    flex: 1;
+  }
+
+  .card-category {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .card-category.travel { background: #ecfdf5; color: #0d9f6e; }
+  .card-category.school { background: #fffbeb; color: #d97706; }
+  .card-category.govt { background: #f5f3ff; color: #7c3aed; }
+  .card-category.tech { background: #eff6ff; color: #2563eb; }
+  .card-category.money { background: #ecfdf5; color: #059669; }
+  .card-category.health { background: #fff1f2; color: #e11d48; }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  .article-card.featured .card-title { font-size: 17px; }
+
+  .card-excerpt {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .read-more-btn {
+    margin-top: 12px;
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .read-more-btn:hover { background: var(--primary-dark); }
+
+  /* ===== FEATURED ARTICLE DETAIL ===== */
+  .article-detail {
+    display: none;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+
+  .article-detail.show { display: block; }
+
+  .article-detail-header {
+    background: linear-gradient(135deg, #0f2870, #1a56db);
+    padding: 28px;
+    color: white;
+    position: relative;
+  }
+
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    border: none;
+    font-family: inherit;
+    transition: background 0.2s;
+  }
+
+  .back-btn:hover { background: rgba(255,255,255,0.28); }
+
+  .article-detail-body {
+    padding: 28px;
+  }
+
+  .article-detail-body h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    color: var(--primary);
+  }
+
+  .article-detail-body p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+
+  .article-detail-body ul {
+    padding-left: 20px;
+    margin-bottom: 14px;
+  }
+
+  .article-detail-body ul li {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 6px;
+  }
+
+  .highlight-box {
+    background: var(--green-light);
+    border-left: 4px solid var(--green);
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #065f46;
+    font-weight: 500;
+  }
+
+  .warning-box {
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #92400e;
+  }
+
+  /* ===== SIDEBAR ===== */
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sidebar-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border);
+  }
+
+  .sidebar-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .popular-list { list-style: none; }
+
+  .popular-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .popular-list li:last-child { border-bottom: none; }
+  .popular-list li:hover { color: var(--primary); }
+
+  .pop-num {
+    background: var(--primary);
+    color: white;
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .pop-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .pop-cat {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* About Box */
+  .about-box {
+    background: linear-gradient(135deg, #1a56db, #0f2870);
+    border-radius: var(--radius);
+    padding: 22px;
+    text-align: center;
+    color: white;
+  }
+
+  .about-avatar {
+    width: 60px; height: 60px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    font-weight: 800;
+    box-shadow: 0 4px 14px rgba(255,107,43,0.4);
+  }
+
+  .about-box h3 { font-size: 16px; font-weight: 800; margin-bottom: 4px; }
+  .about-box p { font-size: 12px; opacity: 0.85; line-height: 1.6; margin-bottom: 14px; }
+
+  .social-links {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .social-link {
+    width: 34px; height: 34px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.18);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+  }
+
+  .social-link:hover { background: rgba(255,255,255,0.3); }
+
+  /* Newsletter */
+  .newsletter input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+    margin-bottom: 8px;
+    transition: border-color 0.2s;
+  }
+
+  .newsletter input:focus { border-color: var(--primary); }
+
+  .newsletter button {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s;
+  }
+
+  .newsletter button:hover { background: var(--primary-dark); }
+
+  /* Quick Links */
+  .quick-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .quick-link {
+    padding: 10px 8px;
+    border-radius: 10px;
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .quick-link:hover { background: var(--primary); color: white; border-color: var(--primary); }
+  .quick-link .icon { font-size: 20px; display: block; margin-bottom: 4px; }
+
+  /* ===== TOOLS SECTION ===== */
+  .tools-section {
+    margin-bottom: 28px;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .tool-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 18px 12px;
+    text-align: center;
+    cursor: pointer;
+    border: 1.5px solid var(--border);
+    transition: all 0.2s;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  }
+
+  .tool-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(26,86,219,0.15);
+  }
+
+  .tool-icon { font-size: 28px; margin-bottom: 8px; display: block; }
+  .tool-name { font-size: 12px; font-weight: 700; color: var(--text); line-height: 1.3; }
+  .tool-desc { font-size: 10px; color: var(--muted); margin-top: 3px; }
+
+  /* ===== SCHEMES SECTION ===== */
+  .scheme-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    border: 1.5px solid var(--border);
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  }
+
+  .scheme-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 3px 14px rgba(26,86,219,0.12);
+  }
+
+  .scheme-icon {
+    width: 46px; height: 46px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .scheme-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .scheme-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  .scheme-badge {
+    display: inline-block;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-top: 6px;
+  }
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .testimonial-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border);
+  }
+
+  .stars { color: #f59e0b; font-size: 13px; margin-bottom: 8px; }
+
+  .testi-text {
+    font-size: 12px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-style: italic;
+  }
+
+  .testi-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .testi-avatar {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+  }
+
+  .testi-name { font-size: 12px; font-weight: 700; }
+  .testi-place { font-size: 10px; color: var(--muted); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: linear-gradient(135deg, #0f2870, #1a56db);
+    color: white;
+    padding: 40px 20px 24px;
+    margin-top: 20px;
+  }
+
+  .footer-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .footer-brand h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+  .footer-brand p { font-size: 12px; opacity: 0.75; line-height: 1.7; }
+
+  .footer-col h4 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-col ul { list-style: none; }
+
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-col ul li a {
+    font-size: 12px;
+    opacity: 0.75;
+    color: white;
+    transition: opacity 0.2s;
+    cursor: pointer;
+  }
+
+  .footer-col ul li a:hover { opacity: 1; }
+
+  .footer-bottom {
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  /* ===== ARTICLE MODAL ===== */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 2000;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+    backdrop-filter: blur(4px);
+  }
+
+  .modal-overlay.show { display: flex; }
+
+  .modal {
+    background: white;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    margin: auto;
+    animation: modalIn 0.25s ease;
+  }
+
+  @keyframes modalIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .modal-header {
+    background: linear-gradient(135deg, #0f2870, #1a56db);
+    padding: 24px 24px 20px;
+    color: white;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    width: 32px; height: 32px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+
+  .modal-close:hover { background: rgba(255,255,255,0.35); }
+
+  .modal-category {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .modal-title { font-size: 20px; font-weight: 800; line-height: 1.3; }
+  .modal-meta { font-size: 11px; opacity: 0.75; margin-top: 8px; }
+
+  .modal-body {
+    padding: 24px;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  .modal-body h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 20px 0 10px;
+  }
+
+  .modal-body h3:first-child { margin-top: 0; }
+
+  .modal-body p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+
+  .modal-body ul {
+    padding-left: 20px;
+    margin-bottom: 14px;
+  }
+
+  .modal-body ul li {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 5px;
+  }
+
+  .modal-body .highlight-box {
+    background: #ecfdf5;
+    border-left: 4px solid #0d9f6e;
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #065f46;
+    font-weight: 500;
+  }
+
+  .modal-body .warning-box {
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #92400e;
+  }
+
+  /* In-article ad */
+  .in-article-ad {
+    background: #f0f4ff;
+    border: 2px dashed #c0d0f0;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    font-size: 11px;
+    color: #7090c0;
+    margin: 20px 0;
+    min-height: 100px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* ===== STATS BAR ===== */
+  .stats-bar {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 20px 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border);
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .stat-item { padding: 4px 0; }
+
+  .stat-num {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-label { font-size: 11px; color: var(--muted); font-weight: 500; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .main-wrapper { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .articles-grid { grid-template-columns: 1fr; }
+    .article-card.featured { flex-direction: column; }
+    .article-card.featured .card-thumb { width: 100%; min-height: 160px; }
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    .testimonial-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .hero h2 { font-size: 22px; }
+    .logo-text h1 { font-size: 15px; }
+    nav { display: none; }
+    .header-search { max-width: 100%; }
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+    .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+    .category-strip { gap: 7px; }
+    .cat-btn { padding: 6px 12px; font-size: 12px; }
+    .stats-bar { padding: 16px; gap: 12px; }
+    .stat-num { font-size: 22px; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">न</div>
+      <div class="logo-text">
+        <h1>Nirbhay Help Center</h1>
+        <span>निर्भय हेल्प सेंटर • India's Trusted Guide</span>
+      </div>
+    </div>
+    <div class="header-search">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Kuch bhi search karein..." id="globalSearch" oninput="filterArticles(this.value)">
+    </div>
+    <nav>
+      <a href="#" class="active" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('articles')">Articles</a>
+      <a href="#" onclick="showSection('tools')">Tools</a>
+      <a href="#" onclick="showSection('schemes')">Schemes</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>🇮🇳 Aapki Har Problem Ka <span>Solution Yahan Hai!</span></h2>
+  <p>Travel tips, school help, government schemes, calculator guides — sab kuch ek jagah. Hindi mein, bilkul free!</p>
+  <div class="hero-search">
+    <input type="text" placeholder="Kuch bhi poochho — travel, school, govt schemes..." id="heroSearch" oninput="filterArticles(this.value)">
+    <button onclick="filterArticles(document.getElementById('heroSearch').value)">Search 🔍</button>
+  </div>
+  <div class="hero-tags">
+    <span onclick="filterByCategory('travel')">✈️ Travel Tips</span>
+    <span onclick="filterByCategory('school')">🏫 School Help</span>
+    <span onclick="filterByCategory('govt')">🏛️ Govt Schemes</span>
+    <span onclick="filterByCategory('money')">💰 Paise ki Tips</span>
+    <span onclick="filterByCategory('tech')">📱 Tech Guide</span>
+    <span onclick="filterByCategory('health')">❤️ Health</span>
+  </div>
+</section>
+
+<!-- TOP AD SLOT -->
+<div class="ad-banner-wrapper">
+  <div class="ad-slot leaderboard">
+    📢 Advertisement (728×90 Leaderboard) — AdSense Code Yahan Lagega
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-wrapper">
+
+  <!-- LEFT COLUMN -->
+  <div>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Useful Articles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">10K+</div>
+        <div class="stat-label">Monthly Readers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Free Content</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">🇮🇳</div>
+        <div class="stat-label">Made in India</div>
+      </div>
+    </div>
+
+    <!-- CATEGORY FILTER -->
+    <div class="category-strip" id="categoryStrip">
+      <div class="cat-btn active" onclick="filterByCategory('all')">🏠 Sab Kuch</div>
+      <div class="cat-btn" onclick="filterByCategory('travel')">✈️ Travel</div>
+      <div class="cat-btn" onclick="filterByCategory('school')">🏫 School</div>
+      <div class="cat-btn" onclick="filterByCategory('govt')">🏛️ Govt</div>
+      <div class="cat-btn" onclick="filterByCategory('money')">💰 Finance</div>
+      <div class="cat-btn" onclick="filterByCategory('tech')">📱 Tech</div>
+      <div class="cat-btn" onclick="filterByCategory('health')">❤️ Health</div>
+      <div class="cat-btn" onclick="filterByCategory('tips')">💡 Daily Tips</div>
+    </div>
+
+    <!-- ARTICLES GRID -->
+    <div class="section-header">
+      <div class="section-title">📰 Latest Articles</div>
+      <div class="view-all" onclick="filterByCategory('all')">Sab Dekho →</div>
+    </div>
+
+    <div class="articles-grid" id="articlesGrid">
+
+      <!-- FEATURED -->
+      <div class="article-card featured" data-category="travel" onclick="openArticle('irctc')">
+        <div class="card-thumb travel">🚂</div>
+        <div class="card-content">
+          <span class="card-category travel">✈️ Travel</span>
+          <div class="card-title">IRCTC Ticket Booking: Step-by-Step Complete Guide 2024 — Ghar Baithe Train Ticket Kaise Book Karein</div>
+          <div class="card-excerpt">India mein train travel sabse popular aur affordable option hai. IRCTC se ticket book karna bahut aasaan hai lekin naye users ko problem hoti hai. Is guide mein hum aapko poori process batayenge — account banana, tatkal booking, payment options sab kuch step by step.</div>
+          <div class="card-meta">
+            <span>📅 June 2024</span>
+            <span>👁️ 8.5K views</span>
+            <span>⏱️ 5 min read</span>
+          </div>
+          <span class="read-more-btn">Poora Padho →</span>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="article-card" data-category="school" onclick="openArticle('school-fee')">
+        <div class="card-thumb school">🏫</div>
+        <div class="card-content">
+          <span class="card-category school">🏫 School</span>
+          <div class="card-title">School Fee Receipt Kaise Banayein — Parents ke liye Complete Guide</div>
+          <div class="card-excerpt">School fee receipt banane ka sahi tarika, kya hona chahiye receipt mein aur kaise WhatsApp par share karein.</div>
+          <div class="card-meta"><span>📅 May 2024</span><span>⏱️ 4 min</span></div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="article-card" data-category="govt" onclick="openArticle('pm-awas')">
+        <div class="card-thumb govt">🏛️</div>
+        <div class="card-content">
+          <span class="card-category govt">🏛️ Govt</span>
+          <div class="card-title">PM Awas Yojana 2024 — Apply Kaise Karein, Kya Documents Chahiye, Kitna Paisa Milega</div>
+          <div class="card-excerpt">Pradhan Mantri Awas Yojana ke liye eligibility, documents aur apply karne ki poori process yahan samjhein.</div>
+          <div class="card-meta"><span>📅 June 2024</span><span>⏱️ 6 min</span></div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="article-card" data-category="money" onclick="openArticle('upi-tips')">
+        <div class="card-thumb money">💰</div>
+        <div class="card-content">
+          <span class="card-category money">💰 Finance</span>
+          <div class="card-title">UPI se Paise Transfer Karte Waqt In 7 Ghaltiyon Se Bachein</div>
+          <div class="card-excerpt">UPI fraud se bachne ke tips, safe transactions karne ka tarika aur kya karein agar galat transfer ho jaye.</div>
+          <div class="card-meta"><span>📅 May 2024</span><span>⏱️ 3 min</span></div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="article-card" data-category="tech" onclick="openArticle('whatsapp-tips')">
+        <div class="card-thumb tech">📱</div>
+        <div class="card-content">
+          <span class="card-category tech">📱 Tech</span>
+          <div class="card-title">WhatsApp ke 10 Hidden Features Jo Aap Shayad Nahi Jaante</div>
+          <div class="card-excerpt">WhatsApp ke kuch amazing features jo bahut kam log use karte hain — View Once, Channels, Voice Note speed aur aur bhi.</div>
+          <div class="card-meta"><span>📅 June 2024</span><span>⏱️ 4 min</span></div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="article-card" data-category="health" onclick="openArticle('diabetes')">
+        <div class="card-thumb health">❤️</div>
+        <div class="card-content">
+          <span class="card-category health">❤️ Health</span>
+          <div class="card-title">Diabetes Control Karne ke Gharelu Nuskhe — Roz ki Diet aur Exercise</div>
+          <div class="card-excerpt">Diabetes manage karne ke liye kya khayen, kya na khayen aur daily routine kya honi chahiye — doctor ki salah ke saath.</div>
+          <div class="card-meta"><span>📅 May 2024</span><span>⏱️ 5 min</span></div>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="article-card" data-category="travel" onclick="openArticle('bus-booking')">
+        <div class="card-thumb travel">🚌</div>
+        <div class="card-content">
+          <span class="card-category travel">✈️ Travel</span>
+          <div class="card-title">Bus Travel Tips India — Safe aur Comfortable Journey ke 15 Zaroori Tips</div>
+          <div class="card-excerpt">Long distance bus journey ke liye kya prepare karein, kaunsa luggage lein, raaste mein kya khayen — Nirbhay Tour expert ki tips.</div>
+          <div class="card-meta"><span>📅 June 2024</span><span>⏱️ 4 min</span></div>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="article-card" data-category="tips" onclick="openArticle('ration-card')">
+        <div class="card-thumb tips">💡</div>
+        <div class="card-content">
+          <span class="card-category">💡 Daily Tips</span>
+          <div class="card-title">Ration Card Correction Online Kaise Karein — Naam, Address, Member Add/Remove</div>
+          <div class="card-excerpt">Ration card mein koi bhi correction ghar baithe online kaise karein — poora process Hindi mein step by step.</div>
+          <div class="card-meta"><span>📅 April 2024</span><span>⏱️ 5 min</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MID-PAGE AD SLOT -->
+    <div class="ad-slot" style="margin-bottom:28px;">
+      📢 Advertisement (336×280 Rectangle) — AdSense Code Yahan Lagega
+    </div>
+
+    <!-- QUICK TOOLS -->
+    <div class="tools-section">
+      <div class="section-header">
+        <div class="section-title">🛠️ Quick Tools</div>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card" onclick="openArticle('calculator')">
+          <span class="tool-icon">🧮</span>
+          <div class="tool-name">Nirbhay Calculator</div>
+          <div class="tool-desc">Advanced Calculator</div>
+        </div>
+        <div class="tool-card" onclick="openArticle('school-bill')">
+          <span class="tool-icon">📋</span>
+          <div class="tool-name">School Bill</div>
+          <div class="tool-desc">Fee Receipt Maker</div>
+        </div>
+        <div class="tool-card" onclick="openArticle('travel-book')">
+          <span class="tool-icon">🚌</span>
+          <div class="tool-name">Bus Booking</div>
+          <div class="tool-desc">Nirbhay Tour & Travels</div>
+        </div>
+        <div class="tool-card" onclick="openArticle('emi-calc')">
+          <span class="tool-icon">💳</span>
+          <div class="tool-name">EMI Calculator</div>
+          <div class="tool-desc">Loan ki EMI Nikalo</div>
+        </div>
+        <div class="tool-card" onclick="openArticle('age-calc')">
+          <span class="tool-icon">🎂</span>
+          <div class="tool-name">Age Calculator</div>
+          <div class="tool-desc">Apni Umar Nikalo</div>
+        </div>
+        <div class="tool-card" onclick="openArticle('bmi-calc')">
+          <span class="tool-icon">⚖️</span>
+          <div class="tool-name">BMI Calculator</div>
+          <div class="tool-desc">Health Check Karo</div>
+        </div>
+        <div class="tool-card" onclick="openArticle('gst-calc')">
+          <span class="tool-icon">🧾</span>
+          <div class="tool-name">GST Calculator</div>
+          <div class="tool-desc">Tax Calculate Karo</div>
+        </div>
+        <div class="tool-card" onclick="openArticle('msg-hub')">
+          <span class="tool-icon">💬</span>
+          <div class="tool-name">Message Hub</div>
+          <div class="tool-desc">WhatsApp Templates</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOVT SCHEMES -->
+    <div class="section-header" style="margin-bottom:14px;">
+      <div class="section-title">🏛️ Government Schemes</div>
+      <div class="view-all">Aur Dekho →</div>
+    </div>
+
+    <div class="scheme-card" onclick="openArticle('pm-awas')">
+      <div class="scheme-icon" style="background:#f5f3ff;">🏠</div>
+      <div>
+        <div class="scheme-title">PM Awas Yojana (Gramin & Shahari)</div>
+        <div class="scheme-desc">Garib logo ke liye pucca ghar banane ke liye 1.2 lakh tak sahayata. Eligibility aur apply karne ka tarika janein.</div>
+        <span class="scheme-badge">✅ Active 2024</span>
+      </div>
+    </div>
+
+    <div class="scheme-card" onclick="openArticle('kisan-samman')">
+      <div class="scheme-icon" style="background:#ecfdf5;">🌾</div>
+      <div>
+        <div class="scheme-title">PM Kisan Samman Nidhi — ₹6000/Saal</div>
+        <div class="scheme-desc">Kisan bhaiyon ke liye ₹6000 saalaana seedha bank mein. Registration kaise karein aur status kaise check karein.</div>
+        <span class="scheme-badge">✅ Active 2024</span>
+      </div>
+    </div>
+
+    <div class="scheme-card" onclick="openArticle('ayushman')">
+      <div class="scheme-icon" style="background:#fff1f2;">🏥</div>
+      <div>
+        <div class="scheme-title">Ayushman Bharat — ₹5 Lakh Free Health Insurance</div>
+        <div class="scheme-desc">Sarkari hospital mein ₹5 lakh tak free treatment. Card kaise banwayein aur kaunse hospitals covered hain.</div>
+        <span class="scheme-badge">✅ Active 2024</span>
+      </div>
+    </div>
+
+    <!-- BOTTOM AD SLOT -->
+    <div class="ad-slot" style="margin-top:28px;">
+      📢 Advertisement (728×90 Leaderboard) — AdSense Code Yahan Lagega
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="section-header" style="margin: 28px 0 18px;">
+      <div class="section-title">⭐ Log Kya Kehte Hain</div>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="testi-text">"Nirbhay Help Center se maine IRCTC booking seekhi! Bahut aasaan aur clear guide thi. Bilkul sahi information di."</div>
+        <div class="testi-user">
+          <div class="testi-avatar" style="background:#1a56db;">R</div>
+          <div>
+            <div class="testi-name">Ramesh Kumar</div>
+            <div class="testi-place">Jaipur, Rajasthan</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="testi-text">"PM Awas Yojana ke baare mein sahi jankari mili. Apply kar diya aur ab process chal rahi hai. Bahut acha website hai!"</div>
+        <div class="testi-user">
+          <div class="testi-avatar" style="background:#0d9f6e;">S</div>
+          <div>
+            <div class="testi-name">Sunita Devi</div>
+            <div class="testi-place">Lucknow, UP</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="testi-text">"School fee receipt wali guide bahut helpful rahi. Parents ko WhatsApp par receipt bhejni aati ab. Thanks Nirbhay ji!"</div>
+        <div class="testi-user">
+          <div class="testi-avatar" style="background:#f59e0b;">P</div>
+          <div>
+            <div class="testi-name">Principal Sharma</div>
+            <div class="testi-place">Bhopal, MP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- ABOUT -->
+    <div class="about-box">
+      <div class="about-avatar">न</div>
+      <h3>Nirbhay Gathon</h3>
+      <p>Namaste! Main Nirbhay Gathon hoon. Travel, school aur daily life ki useful tips Hindi mein share karta hoon. निर्भय Tour & Travels ka founder bhi hoon.</p>
+      <div class="social-links">
+        <a class="social-link" href="#" title="Instagram">📸</a>
+        <a class="social-link" href="#" title="YouTube">▶️</a>
+        <a class="social-link" href="#" title="Facebook">👥</a>
+        <a class="social-link" href="https://wa.me/918518991808" title="WhatsApp">💬</a>
+      </div>
+    </div>
+
+    <!-- AD SIDEBAR -->
+    <div class="ad-slot rectangle">
+      📢 Advertisement (300×250 Rectangle) — AdSense Sidebar Ad
+    </div>
+
+    <!-- POPULAR ARTICLES -->
+    <div class="sidebar-card">
+      <div class="sidebar-title">🔥 Sabse Zyada Padhe Gaye</div>
+      <ul class="popular-list">
+        <li onclick="openArticle('irctc')">
+          <div class="pop-num">1</div>
+          <div>
+            <div class="pop-title">IRCTC Ticket Booking Guide 2024</div>
+            <div class="pop-cat">✈️ Travel • 8.5K views</div>
+          </div>
+        </li>
+        <li onclick="openArticle('pm-awas')">
+          <div class="pop-num">2</div>
+          <div>
+            <div class="pop-title">PM Awas Yojana — Apply Kaise Karein</div>
+            <div class="pop-cat">🏛️ Govt • 6.2K views</div>
+          </div>
+        </li>
+        <li onclick="openArticle('upi-tips')">
+          <div class="pop-num">3</div>
+          <div>
+            <div class="pop-title">UPI Fraud Se Kaise Bachein</div>
+            <div class="pop-cat">💰 Finance • 5.8K views</div>
+          </div>
+        </li>
+        <li onclick="openArticle('whatsapp-tips')">
+          <div class="pop-num">4</div>
+          <div>
+            <div class="pop-title">WhatsApp ke 10 Hidden Features</div>
+            <div class="pop-cat">📱 Tech • 4.9K views</div>
+          </div>
+        </li>
+        <li onclick="openArticle('diabetes')">
+          <div class="pop-num">5</div>
+          <div>
+            <div class="pop-title">Diabetes Control ke Gharelu Nuskhe</div>
+            <div class="pop-cat">❤️ Health • 4.1K views</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="sidebar-card">
+      <div class="sidebar-title">🔗 Quick Links</div>
+      <div class="quick-links">
+        <div class="quick-link" onclick="openArticle('irctc')">
+          <span class="icon">🚂</span>IRCTC Guide
+        </div>
+        <div class="quick-link" onclick="openArticle('upi-tips')">
+          <span class="icon">📱</span>UPI Tips
+        </div>
+        <div class="quick-link" onclick="openArticle('pm-awas')">
+          <span class="icon">🏠</span>PM Awas
+        </div>
+        <div class="quick-link" onclick="openArticle('ayushman')">
+          <span class="icon">🏥</span>Ayushman
+        </div>
+        <div class="quick-link" onclick="openArticle('ration-card')">
+          <span class="icon">📋</span>Ration Card
+        </div>
+        <div class="quick-link" onclick="openArticle('kisan-samman')">
+          <span class="icon">🌾</span>PM Kisan
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="sidebar-card">
+      <div class="sidebar-title">📧 Updates Pao</div>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:12px;">Nayi articles aur government schemes ki jankari seedha inbox mein pao</p>
+      <div class="newsletter">
+        <input type="text" placeholder="Aapka naam">
+        <input type="email" placeholder="Email ya WhatsApp number">
+        <button onclick="alert('🎉 Subscribe kar liya! Shukriya!')">Subscribe Karo 🔔</button>
+      </div>
+    </div>
+
+    <!-- AD SIDEBAR 2 -->
+    <div class="ad-slot half-page">
+      📢 Advertisement (300×600 Half Page) — AdSense Large Ad
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>🇮🇳 Nirbhay Help Center</h3>
+      <p>India ki trusted Hindi website jo aapki har problem ka solution deti hai — travel, school, government schemes, tech tips, health — sab kuch ek jagah. Nirbhay Gathon dwara nirmit, aapke liye.</p>
+      <div class="social-links" style="justify-content:flex-start;margin-top:14px;">
+        <a class="social-link" href="#">📸</a>
+        <a class="social-link" href="#">▶️</a>
+        <a class="social-link" href="#">👥</a>
+        <a class="social-link" href="https://wa.me/918518991808">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a onclick="filterByCategory('travel')">✈️ Travel Tips</a></li>
+        <li><a onclick="filterByCategory('school')">🏫 School Help</a></li>
+        <li><a onclick="filterByCategory('govt')">🏛️ Govt Schemes</a></li>
+        <li><a onclick="filterByCategory('money')">💰 Finance Tips</a></li>
+        <li><a onclick="filterByCategory('tech')">📱 Tech Guide</a></li>
+        <li><a onclick="filterByCategory('health')">❤️ Health Tips</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#">🚌 Nirbhay Tour & Travels</a></li>
+        <li><a href="#">🧮 Nirbhay Calculator</a></li>
+        <li><a href="#">📋 School Bill App</a></li>
+        <li><a href="#">💬 Message Hub</a></li>
+        <li><a href="#">🧾 Receipt Maker</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Important Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Write for Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Nirbhay Help Center — Nirbhay Gathon dwara banaya gaya 🇮🇳</span>
+    <span>Made with ❤️ for India | All rights reserved</span>
+  </div>
+</footer>
+
+<!-- ARTICLE MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="articleModal">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeArticle()">✕</button>
+      <div class="modal-category" id="modalCategory">Category</div>
+      <div class="modal-title" id="modalTitle">Article Title</div>
+      <div class="modal-meta" id="modalMeta">📅 Date • ⏱️ Read time</div>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+  // ===== ARTICLE DATA =====
+  const articles = {
+    irctc: {
+      category: '✈️ Travel',
+      title: 'IRCTC Ticket Booking: Step-by-Step Complete Guide 2024',
+      meta: '📅 June 2024 • ⏱️ 5 min read • 👁️ 8,500 views',
+      body: `
+        <h3>IRCTC kya hai?</h3>
+        <p>IRCTC (Indian Railway Catering and Tourism Corporation) Indian Railways ki official website aur app hai jahan se aap train tickets book kar sakte hain. Har mahine crore ticket yahan book hoti hain.</p>
+        <div class="highlight-box">💡 Tip: IRCTC app mobile par download karo — website se zyada fast aur easy hai ticket book karna.</div>
+        <h3>Step 1: IRCTC Account Banana</h3>
+        <ul>
+          <li>irctc.co.in ya IRCTC Rail Connect app open karo</li>
+          <li>"Register" ya "Sign Up" par click karo</li>
+          <li>Naam, mobile number, email, date of birth, address fill karo</li>
+          <li>Username aur password choose karo (yaad rakhna zaroori hai)</li>
+          <li>Mobile OTP aur email verification karo</li>
+          <li>Aapka account ready hai!</li>
+        </ul>
+        <h3>Step 2: Train Search Karna</h3>
+        <p>Home page par "Book Ticket" section mein:</p>
+        <ul>
+          <li>From: Apna station likho (e.g., KOTA, JAIPUR, DELHI)</li>
+          <li>To: Destination station likho</li>
+          <li>Date: Journey ki date select karo</li>
+          <li>Class: Sleeper (SL), 3AC, 2AC, General — apna choose karo</li>
+          <li>"Search Trains" par click karo</li>
+        </ul>
+        <div class="in-article-ad">📢 Advertisement — AdSense In-Article Ad</div>
+        <h3>Step 3: Seat Check aur Book Karna</h3>
+        <p>Available trains dikhenge. Apni train select karo, class check karo aur "Book Now" par click karo. Passenger details fill karo — naam exactly Aadhaar jaisa hona chahiye.</p>
+        <h3>Tatkal Booking kya hai?</h3>
+        <p>Tatkal tickets last minute travel ke liye hain. AC class mein extra ₹300-400 aur Sleeper mein ₹100-200 extra lagta hai. Tatkal booking subah 10 baje (AC) aur 11 baje (Non-AC) start hoti hai.</p>
+        <div class="warning-box">⚠️ Dhyan rakho: Tatkal mein cancellation charge bahut zyada hota hai. Confirm travel pe hi book karo.</div>
+        <h3>Payment Options</h3>
+        <ul>
+          <li>UPI (GPay, PhonePe, Paytm) — Sabse fast</li>
+          <li>Debit/Credit Card</li>
+          <li>Net Banking</li>
+          <li>IRCTC Wallet (pehle recharge karo)</li>
+        </ul>
+        <h3>Ticket Download kaise karein?</h3>
+        <p>Booking ke baad "My Transactions" mein jao, apni booking select karo aur "Print/Download ERS" par click karo. PDF download ho jayegi jise aap offline bhi rakh sakte hain.</p>
+        <div class="highlight-box">✅ Yaad rakho: TTE ko sirf Aadhaar card ya koi ek government ID dikhana hota hai train mein. Physical ticket zaroori nahi.</div>
+      `
+    },
+    'pm-awas': {
+      category: '🏛️ Govt Scheme',
+      title: 'PM Awas Yojana 2024 — Apply Kaise Karein, Eligibility, Documents',
+      meta: '📅 June 2024 • ⏱️ 6 min read • 👁️ 6,200 views',
+      body: `
+        <h3>PM Awas Yojana kya hai?</h3>
+        <p>Pradhan Mantri Awas Yojana (PMAY) ek government scheme hai jo garib aur middle class logon ko pucca ghar banane mein madad karti hai. Do parts hain: PMAY-Gramin (gaon ke liye) aur PMAY-Shahari (sheher ke liye).</p>
+        <div class="highlight-box">💰 PMAY-G mein plain area mein ₹1.2 lakh aur hilly/difficult area mein ₹1.3 lakh milte hain.</div>
+        <h3>Eligibility (Kaun apply kar sakta hai?)</h3>
+        <ul>
+          <li>Aapke paas apna pucca ghar nahi hona chahiye</li>
+          <li>BPL (Below Poverty Line) ya EWS (Economically Weaker Section) hona chahiye</li>
+          <li>Family annual income ₹3 lakh se kam (EWS) ya ₹3-6 lakh (LIG)</li>
+          <li>Aadhaar card hona zaroori hai</li>
+          <li>Mahila ke naam property prefer ki jaati hai</li>
+        </ul>
+        <h3>Zaroori Documents</h3>
+        <ul>
+          <li>Aadhaar Card (sabhi family members ka)</li>
+          <li>Bank Passbook ya Account Details</li>
+          <li>Income Certificate</li>
+          <li>Jamin ke kagaz (agar apni zameen hai)</li>
+          <li>Jaati Praman Patra (agar SC/ST/OBC hain)</li>
+          <li>Swachh Bharat Mission beneficiary number (agar shauchalaya nahi hai)</li>
+        </ul>
+        <div class="in-article-ad">📢 Advertisement — AdSense In-Article Ad</div>
+        <h3>Apply Kaise Karein?</h3>
+        <p><strong>Online:</strong> pmayg.nic.in ya pmaymis.gov.in par jaao aur "Awaassoft" mein registration karo. Apna Aadhaar number dalo, form fill karo aur submit karo.</p>
+        <p><strong>Offline:</strong> Apne gram panchayat office ya block development office jaao. Wahan application form milega. Fill karke submit karo.</p>
+        <h3>Status Kaise Check Karein?</h3>
+        <p>pmayg.nic.in par "Awaassoft" mein login karo ya helpline 1800-11-6446 (toll free) par call karo. Apna registration number daalne par status pata chalega.</p>
+        <div class="warning-box">⚠️ Koi bhi agent ya dalal ko paise mat do. PMAY application bilkul free hai!</div>
+      `
+    },
+    'upi-tips': {
+      category: '💰 Finance',
+      title: 'UPI se Paise Transfer Karte Waqt In 7 Ghaltiyon Se Bachein',
+      meta: '📅 May 2024 • ⏱️ 3 min read • 👁️ 5,800 views',
+      body: `
+        <h3>UPI Fraud India mein tezi se badh raha hai</h3>
+        <p>India mein har din thousands of UPI fraud ke cases aate hain. Thodi si sawdhani se aap apna paisa safe rakh sakte hain. Yeh 7 tips yaad rakhein:</p>
+        <h3>1. UPI PIN kabhi share mat karo</h3>
+        <p>Aapka UPI PIN sirf aapke liye hai. Bank ya company kabhii nahi maangti. Koi bhi maange — refuse karo.</p>
+        <h3>2. Paisa receive karne mein PIN nahi lagta</h3>
+        <p>Agar koi keh raha hai "PIN daalo paisa receive karne ke liye" — 100% fraud hai. Pin sirf bhejte waqt lagta hai.</p>
+        <div class="highlight-box">🔒 Yaad rakho: Receive = koi PIN nahi. Send = PIN lagta hai.</div>
+        <h3>3. QR code scan karte waqt amount check karo</h3>
+        <p>Kisi ke QR code scan karne ke baad amount confirm screen par check karo. Ek rupee bhi jyada nahi jani chahiye.</p>
+        <h3>4. Unknown links par click mat karo</h3>
+        <p>SMS ya WhatsApp par aaye "free recharge", "lottery", "KYC update" waale links fraud ho sakte hain. Kisi par bhi click mat karo.</p>
+        <h3>5. Collect Request aane par dhyan do</h3>
+        <p>Agar koi app mein "collect request" bheja hai to pehle note karo — agar aap ne kuch buy nahi kiya to yeh scam ho sakta hai.</p>
+        <div class="in-article-ad">📢 Advertisement</div>
+        <h3>6. Screen Share kabhi mat karo</h3>
+        <p>Koi support executive ya agent aapka screen share maange — bilkul mat karo. Aapka banking app dikhega aur fraud ho sakta hai.</p>
+        <h3>7. Agar fraud ho jaye to kya karein?</h3>
+        <ul>
+          <li>Turant apna UPI app band karo aur PIN change karo</li>
+          <li>Bank ko immediately call karo</li>
+          <li>cybercrime.gov.in par complaint karo</li>
+          <li>Helpline: 1930 (Cyber Crime Helpline)</li>
+        </ul>
+        <div class="warning-box">🚨 Koi bhi UPI complaint: 1930 number par call karo — 24/7 available hai.</div>
+      `
+    },
+    'whatsapp-tips': {
+      category: '📱 Tech',
+      title: 'WhatsApp ke 10 Hidden Features Jo Aap Shayad Nahi Jaante',
+      meta: '📅 June 2024 • ⏱️ 4 min read • 👁️ 4,900 views',
+      body: `
+        <h3>WhatsApp sirf messaging nahi hai!</h3>
+        <p>Zyaadatar log WhatsApp sirf message aur call ke liye use karte hain. Lekin ismein bahut saare hidden features hain jo aapki life easy kar sakte hain.</p>
+        <h3>1. View Once Media</h3>
+        <p>Koi photo ya video bhejo jo sirf ek baar dekhi jaye — phir automatically delete ho jaye. Media ke next "1" icon press karo.</p>
+        <h3>2. Voice Note Speed</h3>
+        <p>Lamba voice message? Playback speed 1x, 1.5x ya 2x kar sakte ho. Play button ke paas speed option tap karo.</p>
+        <h3>3. Kisi ka Message Pin Karo</h3>
+        <p>Group ya chat mein important message ko pin karo taaki baad mein easily mil sake. Message ko hold karo → Pin option.</p>
+        <div class="highlight-box">💡 WhatsApp Channel subscribe karo useful updates ke liye — bilkul free!</div>
+        <h3>4. Bold, Italic, Strikethrough Text</h3>
+        <ul>
+          <li><strong>Bold:</strong> *text* ya select karke B</li>
+          <li><em>Italic:</em> _text_ ya select karke I</li>
+          <li>Strikethrough: ~text~</li>
+        </ul>
+        <h3>5. Chat Lock</h3>
+        <p>Kisi specific chat ko fingerprint se lock kar sakte ho. Chat mein jao → contact naam tap karo → "Chat Lock".</p>
+        <div class="in-article-ad">📢 Advertisement</div>
+        <h3>6. Passkey se Login</h3>
+        <p>Ab WhatsApp mein fingerprint ya face se login ho sakta hai — OTP ki zaroorat nahi. Settings → Account → Passkeys.</p>
+        <h3>7. Message Khud ko Bhejo</h3>
+        <p>Notes ya reminders khud ko WhatsApp par bhejo. Apna number save karo aur message karo.</p>
+        <h3>8. Status ko Mute Karo</h3>
+        <p>Kisi ka status bahut aata hai? Long press karo aur "Mute" select karo — unhe pata nahi chalega.</p>
+        <h3>9. WhatsApp Web QR Code se</h3>
+        <p>wa.me URL se directly kisi ko message bhej sakte ho bina number save kiye. Business ke liye bahut useful!</p>
+        <h3>10. Polls Group mein</h3>
+        <p>Group mein quick poll banana ho to "+" icon → Poll. Members vote kar sakte hain.</p>
+      `
+    },
+    diabetes: {
+      category: '❤️ Health',
+      title: 'Diabetes Control Karne ke Gharelu Nuskhe — Diet aur Exercise',
+      meta: '📅 May 2024 • ⏱️ 5 min read • 👁️ 4,100 views',
+      body: `
+        <div class="warning-box">⚠️ Yeh article sirf general information ke liye hai. Diabetes management ke liye apne doctor ki salah zaroor lein.</div>
+        <h3>Diabetes kya hai?</h3>
+        <p>Diabetes ek aisi condition hai jisme body blood sugar (glucose) ko sahi se control nahi kar paati. Type 1, Type 2 aur Gestational diabetes teen main types hain. India mein 77 million se zyada log diabetes se peedit hain.</p>
+        <h3>Kya Khayen (Helpful Foods)</h3>
+        <ul>
+          <li>🥦 Hari sabziyaan — lauki, karela, methi, palak</li>
+          <li>🌾 Brown rice, jowar, bajra ki roti</li>
+          <li>🫘 Dal aur legumes — protein aur fiber</li>
+          <li>🥜 Akhrot, badam (thodi matra mein)</li>
+          <li>🍋 Nimbu paani (bina cheeni)</li>
+          <li>🫖 Green tea ya tulsi chai</li>
+        </ul>
+        <div class="highlight-box">💡 Karele ka juice ya methi dana ka paani subah khali pet lena blood sugar control karne mein helpful ho sakta hai.</div>
+        <h3>Kya Na Khayen</h3>
+        <ul>
+          <li>White rice, maida, white bread — kam karein</li>
+          <li>Cheeni, mithai, cold drinks — bilkul band karein</li>
+          <li>Fried snacks — namkeen, samosa, chips</li>
+          <li>Fruit juices (packed) — sugar bahut zyada</li>
+        </ul>
+        <div class="in-article-ad">📢 Advertisement</div>
+        <h3>Exercise — Roz 30 Minute</h3>
+        <ul>
+          <li>Subah ki walk — 20-30 minute</li>
+          <li>Yoga — Surya namaskar, pranayama</li>
+          <li>Khana khane ke baad 10 minute walk</li>
+          <li>Seedhiyaan use karo lift ki jagah</li>
+        </ul>
+        <h3>Blood Sugar Check karte rehna</h3>
+        <p>Ghar mein glucometer rakhein aur fasting (khane se pehle) aur post-meal (2 ghante baad) sugar check karte rehein. Normal fasting: 70-100 mg/dL.</p>
+        <div class="warning-box">🏥 HbA1c test har 3 mahine mein karwana zaroori hai. Doctor ki dawai bandh mat karo bina salah liye.</div>
+      `
+    },
+    'bus-booking': {
+      category: '✈️ Travel',
+      title: 'Bus Travel Tips India — Safe aur Comfortable Journey ke Tips',
+      meta: '📅 June 2024 • ⏱️ 4 min read',
+      body: `
+        <h3>Long Distance Bus Journey — Kya Prepare Karein?</h3>
+        <p>India mein bus travel bahut popular aur affordable hai. Nirbhay Tour & Travels mein hum daily hazaron passengers ko safe journey dete hain. Yeh tips aapke liye hain:</p>
+        <h3>Journey Se Pehle</h3>
+        <ul>
+          <li>Ticket confirm karein — booking ID ya screenshot save karo</li>
+          <li>Bus stop ka exact location pehle se jaano</li>
+          <li>Departure se 15 minute pehle pahuncho</li>
+          <li>Luggage properly pack karo — taala lagao bags mein</li>
+          <li>Medicines, paani, light snacks saath rakhein</li>
+        </ul>
+        <div class="highlight-box">📞 Nirbhay Tour & Travels helpline: 8518991808 — 24/7 available</div>
+        <h3>Journey Mein</h3>
+        <ul>
+          <li>Seat belt bandhein agar available hai</li>
+          <li>Valuables (purse, mobile) apne paas rakhein</li>
+          <li>Raat ki journey mein window properly lock karein</li>
+          <li>Halts par bus ki number yaad rakhein</li>
+          <li>Paani zyada peeyen — hydrated rehein</li>
+        </ul>
+        <div class="in-article-ad">📢 Advertisement</div>
+        <h3>Aansaari/Motion Sickness ke liye</h3>
+        <p>Agar safar mein ulti ya chakkar aata hai to front seat prefer karein, ginger ki candy ya saunf saath rakhein. Doctor se Avomine tablet le sakte hain.</p>
+        <h3>Safety Tips</h3>
+        <ul>
+          <li>Anjaan logo ke saath khana mat khao</li>
+          <li>Raat ko driver ko chai peene mein madad karein (alert rehne ke liye)</li>
+          <li>Emergency numbers save karein — 112 (Police), 108 (Ambulance)</li>
+        </ul>
+        <div class="highlight-box">🚌 Nirbhay Tour & Travels: India ke top routes par daily service. Safe, comfortable aur affordable!</div>
+      `
+    },
+    'ration-card': {
+      category: '💡 Daily Tips',
+      title: 'Ration Card Correction Online Kaise Karein — Complete Guide',
+      meta: '📅 April 2024 • ⏱️ 5 min read',
+      body: `
+        <h3>Ration Card mein correction kyun zaroori hai?</h3>
+        <p>Agar ration card mein naam galat hai, address purana hai, ya koi member add/remove karna hai — to correction karwana zaroori hai. Galat information hoti hai to ration milne mein problem ho sakti hai.</p>
+        <h3>Online Correction Process</h3>
+        <ul>
+          <li>Apne state ki food department website kholo (e.g., UP: fcs.up.gov.in, Rajasthan: food.rajasthan.gov.in)</li>
+          <li>"Ration Card Services" ya "Online Application" mein jao</li>
+          <li>Ration card number aur registered mobile se login karo</li>
+          <li>Correction type select karo: Naam, Address, Member Add/Remove</li>
+          <li>Documents upload karo (Aadhaar, proof)</li>
+          <li>Submit karo aur application number note karo</li>
+        </ul>
+        <div class="highlight-box">📱 Mera Ration app (Government of India) se bhi correction request bhej sakte hain.</div>
+        <h3>Naam Correction ke liye Documents</h3>
+        <ul>
+          <li>Aadhaar Card (correct naam wala)</li>
+          <li>Birth Certificate ya School Certificate</li>
+          <li>Self-declaration affidavit (notary se)</li>
+        </ul>
+        <div class="in-article-ad">📢 Advertisement</div>
+        <h3>Member Add karne ke liye</h3>
+        <ul>
+          <li>Birth certificate (naye bachche ke liye)</li>
+          <li>Marriage certificate (bahu/damaad ke liye)</li>
+          <li>Aadhaar card us member ka</li>
+        </ul>
+        <h3>Status Kaise Check Karein?</h3>
+        <p>State food portal par "Application Status" mein apna application number dalo. Ya phir 1800-3000-3468 (toll free) par call karo.</p>
+        <div class="warning-box">⚠️ Kisi bhi agent ko paise mat do — ration card correction bilkul free hai sarkari portal se.</div>
+      `
+    },
+    'kisan-samman': {
+      category: '🏛️ Govt Scheme',
+      title: 'PM Kisan Samman Nidhi — ₹6000 Saalaana Kaise Milta Hai',
+      meta: '📅 June 2024 • ⏱️ 5 min read',
+      body: `
+        <h3>PM Kisan Samman Nidhi kya hai?</h3>
+        <p>Yeh ek central government ki scheme hai jisme registered farmers ko har saal ₹6000 ki direct financial help di jaati hai — teen kisht mein ₹2000-₹2000-₹2000. Seedha bank account mein aata hai.</p>
+        <div class="highlight-box">💰 17th Kist already release ho chuki hai. 18th kist jald aayegi — status check karo.</div>
+        <h3>Eligibility</h3>
+        <ul>
+          <li>Khet ki zameen aapke naam honi chahiye</li>
+          <li>Government job nahi honi chahiye (grade 4 tak OK)</li>
+          <li>Income tax payer nahi hona chahiye</li>
+          <li>Khud aur family ka annual income ₹2 lakh se zyada nahi</li>
+        </ul>
+        <h3>Registration Kaise Karein?</h3>
+        <ul>
+          <li>pmkisan.gov.in par jao</li>
+          <li>"New Farmer Registration" par click karo</li>
+          <li>Aadhaar number dalo aur OTP verify karo</li>
+          <li>Zameen ki details, bank account details fill karo</li>
+          <li>Submit karo</li>
+        </ul>
+        <div class="in-article-ad">📢 Advertisement</div>
+        <h3>eKYC Zaroori Hai!</h3>
+        <p>PM Kisan ka paisa milne ke liye eKYC karwana compulsory hai. pmkisan.gov.in par "eKYC" option se ya nearest CSC center se karwao.</p>
+        <h3>Status Check Karna</h3>
+        <p>pmkisan.gov.in → "Beneficiary Status" → Aadhaar ya Mobile number se check karo ki aapki kist aayi ya nahi.</p>
+        <div class="warning-box">⚠️ Koi bhi "PM Kisan Agent" fraud hai. Website ya CSC center se hi karo — bilkul free!</div>
+      `
+    },
+    ayushman: {
+      category: '🏛️ Govt Scheme',
+      title: 'Ayushman Bharat — ₹5 Lakh Free Health Insurance Complete Guide',
+      meta: '📅 May 2024 • ⏱️ 6 min read',
+      body: `
+        <h3>Ayushman Bharat PM-JAY kya hai?</h3>
+        <p>Pradhan Mantri Jan Arogya Yojana (PM-JAY) duniya ki sabse badi health insurance scheme hai. Is mein eligible families ko sarkari aur empanelled private hospitals mein ₹5 lakh tak FREE treatment milti hai.</p>
+        <div class="highlight-box">🏥 50 crore se zyada log is scheme ke antargat aate hain — check karo aap bhi eligible hain ya nahi!</div>
+        <h3>Eligibility Kaise Check Karein?</h3>
+        <ul>
+          <li>pmjay.gov.in par jao</li>
+          <li>"Am I Eligible" par click karo</li>
+          <li>Mobile number ya ration card number dalo</li>
+          <li>Turant pata chalega</li>
+        </ul>
+        <h3>Ayushman Card Kaise Banwayein?</h3>
+        <ul>
+          <li>Beneficiary.nha.gov.in ya Ayushman app download karo</li>
+          <li>Aadhaar number se login karo (OTP aayega)</li>
+          <li>Apna naam list mein check karo</li>
+          <li>Eligible hain to "Download Card" par click karo</li>
+          <li>Ya nearest CSC/hospital se bhi banwa sakte hain</li>
+        </ul>
+        <div class="in-article-ad">📢 Advertisement</div>
+        <h3>Kaunse Hospitals Mein Treatment Milegi?</h3>
+        <p>pmjay.gov.in par "Find Hospital" mein apna state/city dalo — saare empanelled hospitals ki list milegi. Card dikhao aur free treatment pao.</p>
+        <h3>Kya Diseases Cover Hain?</h3>
+        <ul>
+          <li>Heart surgery, kidney transplant</li>
+          <li>Cancer treatment</li>
+          <li>Orthopaedic surgeries</li>
+          <li>Maternity benefits</li>
+          <li>1500+ procedures covered hain</li>
+        </ul>
+        <div class="warning-box">🚨 Koi agent "Ayushman Card fee" maange to complaint karo: 14555 ya 1800-111-565 par call karo.</div>
+      `
+    },
+    calculator: {
+      category: '🛠️ Tool',
+      title: 'Nirbhay Calculator — Advanced Web Calculator',
+      meta: '🛠️ Free Tool',
+      body: `<h3>Nirbhay Calculator</h3><p>Nirbhay Calculator ek advanced web-based calculator hai jo India ke users ke liye specially banaya gaya hai. Scientific calculations, percentage, GST calculation sab ek jagah.</p><div class="highlight-box">🧮 Nirbhay Calculator jald launch ho raha hai! Subscribe karo update ke liye.</div>`
+    },
+    'school-bill': {
+      category: '🛠️ Tool',
+      title: 'Nirbhay School Bill — Fee Receipt Generator',
+      meta: '🛠️ Free Tool',
+      body: `<h3>Nirbhay School Bill</h3><p>School fee receipt banao professional letterhead ke saath aur parents ko WhatsApp par bhejo — ek click mein. Hindi aur English support.</p><div class="highlight-box">📋 Nirbhay School Bill app try karo — bilkul free!</div>`
+    },
+    'travel-book': {
+      category: '🚌 Travel',
+      title: 'Nirbhay Tour & Travels — Bus Booking',
+      meta: '📞 8518991808',
+      body: `<h3>निर्भय Tour & Travels</h3><p>India ke major routes par daily bus service. Safe, comfortable aur affordable travel. Booking ke liye WhatsApp ya call karo.</p><div class="highlight-box">📞 Book karo: 8518991808 | WhatsApp bhi available hai!</div>`
+    }
+  };
+
+  // ===== FUNCTIONS =====
+  function openArticle(id) {
+    const art = articles[id];
+    if (!art) return;
+    document.getElementById('modalCategory').textContent = art.category;
+    document.getElementById('modalTitle').textContent = art.title;
+    document.getElementById('modalMeta').textContent = art.meta;
+    document.getElementById('modalBody').innerHTML = art.body;
+    document.getElementById('modalOverlay').classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeArticle() {
+    document.getElementById('modalOverlay').classList.remove('show');
+    document.body.style.overflow = '';
+  }
+
+  function closeModal(e) {
+    if (e.target === document.getElementById('modalOverlay')) closeArticle();
+  }
+
+  function filterByCategory(cat) {
+    const cards = document.querySelectorAll('.article-card');
+    const btns = document.querySelectorAll('.cat-btn');
+    btns.forEach(b => b.classList.remove('active'));
+    
+    if (cat === 'all') {
+      cards.forEach(c => c.style.display = '');
+      btns[0].classList.add('active');
+    } else {
+      cards.forEach(c => {
+        c.style.display = c.dataset.category === cat ? '' : 'none';
+      });
+      btns.forEach(b => {
+        if (b.textContent.toLowerCase().includes(cat) || 
+            (cat === 'money' && b.textContent.includes('Finance')) ||
+            (cat === 'tips' && b.textContent.includes('Tips'))) {
+          b.classList.add('active');
+        }
+      });
+    }
+    window.scrollTo({ top: document.querySelector('.articles-grid').offsetTop - 100, behavior: 'smooth' });
+  }
+
+  function filterArticles(query) {
+    if (!query.trim()) {
+      filterByCategory('all');
+      return;
+    }
+    const cards = document.querySelectorAll('.article-card');
+    const q = query.toLowerCase();
+    cards.forEach(c => {
+      const text = c.innerText.toLowerCase();
+      c.style.display = text.includes(q) ? '' : 'none';
+    });
+  }
+
+  // Keyboard close
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeArticle();
+  });
+</script>
+
+</body>
+</html>
